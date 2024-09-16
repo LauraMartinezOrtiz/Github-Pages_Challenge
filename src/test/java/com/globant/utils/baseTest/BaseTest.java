@@ -19,7 +19,8 @@ public class BaseTest {
 
     @BeforeTest
     protected void initializeDriver() {
-        driver = new MyDriver();
+        String browserType = System.getProperty("browserName");
+        driver = MyDriver.newDriver(browserType == null ? "CHROME" : browserType);
         driver.getDriver().navigate().to("https://www.saucedemo.com/");
     }
 

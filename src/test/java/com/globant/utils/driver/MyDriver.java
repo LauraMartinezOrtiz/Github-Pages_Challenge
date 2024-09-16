@@ -9,14 +9,12 @@ public class MyDriver {
 
     private final WebDriver driver;
 
-    public MyDriver() {
-        WebDriverManager.chromedriver().setup();
+    public MyDriver(String browserName) {
+        driver = BrowserType.valueOf(browserName).createDriver();
+    }
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
-        options.addArguments("--remote-allow-origins=*");
-
-        driver = new ChromeDriver(options);
+    public static MyDriver newDriver(String browserName){
+        return new MyDriver(browserName);
     }
 
     public WebDriver getDriver() {
