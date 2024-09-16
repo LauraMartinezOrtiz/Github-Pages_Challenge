@@ -13,7 +13,6 @@ public enum BrowserType {
         public WebDriver createDriver() {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");
-            //options.addArguments("--start-maximized");
             WebDriverManager.chromedriver().setup();
             return new ChromeDriver(options);
 
