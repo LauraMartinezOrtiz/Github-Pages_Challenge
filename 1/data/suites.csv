@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Sep 16 21:44:06 GMT 2024","Mon Sep 16 21:44:07 GMT 2024","459","Web Automation Suite","Remove Product","com.globant.tests.RemoveProductTest","com.globant.tests.RemoveProductTest","checkProductsSuccessfullyRemoved","checkProductsSuccessfullyRemoved",""
+"passed","Mon Sep 16 21:44:08 GMT 2024","Mon Sep 16 21:44:08 GMT 2024","669","Web Automation Suite","Logout","com.globant.tests.LogoutTest","com.globant.tests.LogoutTest","checkSuccessfulLogout","checkSuccessfulLogout",""
+"passed","Mon Sep 16 21:44:05 GMT 2024","Mon Sep 16 21:44:05 GMT 2024","569","Web Automation Suite","Purchase Product","com.globant.tests.PurchaseProductTest","com.globant.tests.PurchaseProductTest","checkSuccessfulPurchase","checkSuccessfulPurchase",""
